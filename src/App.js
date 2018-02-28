@@ -61,7 +61,7 @@ class App extends Component {
     render() {
     return (
         <div>
-        <NavbarDefault/>
+        {/*<NavbarDefault/>*/}
             <div className='notesWrapper'>
                 <div className='notesHeader'>
                 <div className='heading'>React and Firebase TodoList</div>
