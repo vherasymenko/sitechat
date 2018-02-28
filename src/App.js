@@ -5,6 +5,8 @@ import NoteForm from './NoteForm/NoteForm'
 import { DB_CONFIG } from "./Config/config";
 import firebase from 'firebase/app';
 import 'firebase/database'
+import NavbarDefault from './NavbarDefault/NavbarDefault'
+
 
 class App extends Component {
 
@@ -58,8 +60,10 @@ class App extends Component {
 
     render() {
     return (
-        <div className='notesWrapper'>
-            <div className='notesHeader'>
+        <div>
+        <NavbarDefault/>
+            <div className='notesWrapper'>
+                <div className='notesHeader'>
                 <div className='heading'>React and Firebase TodoList</div>
             </div>
             <div className='notesBody'>
@@ -74,6 +78,7 @@ class App extends Component {
             <div className='notesFooter'>
                 <NoteForm addNote={this.addNote} />
             </div>
+        </div>
         </div>
     );
   }
